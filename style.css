@@ -27,12 +27,35 @@ html {
 
 .header {
     justify-content: space-between;
+    padding-right: 10vh;
+}
+
+
+.zLogo {
+    align-self: flex-start;
+    overflow: visible;
+    transform: scale(16%);
+    width: 44vh;
+    height: 40vh;
+    font-size: 40vh;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    fill: darkgreen;
+  }
+  .topBracket {
+    transform: translate(26vh, 28vh) rotate(-23deg);
+  }
+  .botBracket {
+    transform: translate(6vh, 48vh) rotate(-23deg);
+  }
+  .slash {
+    transform: translate(10vh, 31vh) rotate(29deg);
+    fill: green;
 }
 
 .header,
 .footer {
     background-color: #141312;
-    padding: 4vh;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
