@@ -2,3 +2,74 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    background-color: #072d17;
+    color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.container > *:not(:first-child):not(:last-child) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 88vh;
+}
+
+.container > *:not(:first-child):not(:last-child):nth-child(even) {
+    background-color: #375a47;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header,
+.footer {
+    background-color: #141312;
+    padding: 4vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero {
+}
+
+.about {
+}
+
+.experience {
+}
+
+.interests {
+}
+
+.fun {
+}
+
+.contact {
+}
+
+.footer {
+    justify-content: center;
+}
+
+.footer a {
+    margin: 4px;
+}
