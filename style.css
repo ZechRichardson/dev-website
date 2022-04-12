@@ -53,6 +53,12 @@ html {
     fill: green;
 }
 
+.customLogo {
+    stroke: darkgreen;
+    stroke-linecap: round;
+    stroke-width: 0.4vh;
+}
+
 .header,
 .footer {
     background-color: #141312;
