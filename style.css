@@ -18,7 +18,7 @@ html {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    flex-basis: 88vh;
+    flex-basis: 100vh;
 }
 
 .container > *:not(:first-child):not(:last-child):nth-child(even) {
