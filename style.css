@@ -50,6 +50,7 @@ html {
 
 .navbar {
     display: flex;
+    flex-flow: row wrap;
     text-decoration: none;
     list-style: none;
     gap: 10px;
