@@ -1,1 +1,1 @@
-# This will be host my new, personal website.
+# This will be where I host my new, personal website.
