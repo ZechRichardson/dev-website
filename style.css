@@ -8,6 +8,13 @@ html {
     color: lightgray;
 }
 
+.zCodeLogo {
+    height: 8vh;
+    stroke: darkgreen;
+    stroke-linecap: round;
+    stroke-width: 2px;
+}
+
 .container {
     display: flex;
     flex-flow: column nowrap;
@@ -18,7 +25,10 @@ html {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    flex-basis: 100vh;
+    flex-basis: 90vh;
+    border-color: lightgray;
+    border-width: 4px;
+    /* border-style: solid; */
 }
 
 .container > *:not(:first-child):not(:last-child):nth-child(even) {
@@ -26,50 +36,39 @@ html {
 }
 
 .header {
+    display: flex;
     justify-content: space-between;
-    padding-right: 10vh;
-}
-
-.zCodeLogo {
-    stroke: darkgreen;
-    stroke-linecap: round;
-    stroke-width: 2px;
+    align-items: center;
 }
 
 .header,
 .footer {
     background-color: #141312;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    padding: 2vh;
 }
 
 .navbar {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+}
+
+.navbar a:link,
+.navbar a:visited
+ {
+    color: inherit;
     text-decoration: none;
     list-style: none;
 }
 
-.hero {
+.navbar a:hover {
+    color: #375a47;
 }
 
-.about {
-}
-
-.experience {
-}
-
-.interests {
-}
-
-.fun {
-}
-
-.contact {
+.navbar a:active {
+    color: #072d17;
 }
 
 .footer {
@@ -77,5 +76,10 @@ html {
 }
 
 .footer a {
-    margin: 4px;
+    margin-left: 4px;
+}
+
+.footer img {
+    height: 16px;
+    width: auto;
 }
