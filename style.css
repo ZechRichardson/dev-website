@@ -97,6 +97,7 @@ html {
 	font-weight: bolder;
 	text-align: center;
 	box-shadow: 2px 2px 3px lightgray;
+	border-radius: 40px;
     text-decoration: none;
     list-style: none;
     display: flex;
