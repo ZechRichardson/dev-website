@@ -6,6 +6,7 @@
 html {
     background-color: #072d17;
     color: lightgray;
+    scroll-behavior: smooth;
 }
 
 .zCodeLogo {
