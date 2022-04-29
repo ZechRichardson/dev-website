@@ -10,7 +10,7 @@ html {
 }
 
 .zCodeLogo,
-zLogoAnim {
+.zLogoAnim {
     transform-origin: 50% 50%;
     transform: scale(100%);
     height: 8vh;
