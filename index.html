@@ -13,11 +13,18 @@
 
         <div class="header">
             <div class="headerLogo">
-<!--                 <img class="zCodeLogo" src="./media/zCodeLogo.svg"/> -->
-                <svg width=auto height=auto viewbox="0, 0, 100, 100" class="zLogoAnim" onclick="this.classList.toggle('active')">
-                    <polyline points="46,28 66,28 54,44"/>
-                    <line x1="39" y1="56" x2="57" y2="32" stroke="green"/>
-                    <polyline points="42,44 30,60 50,60"/>
+                <svg class="zLogoPath" viewBox="0 0 40 36" onclick="this.classList.toggle('clicked')">
+                  <path class="bg after" d="M8,2 L108,2 L108,2 L8,2z" fill="#001000" stroke="none"/>
+                  <path class="topLine before" d="M18,2 L38,2 L26,18" stroke="darkgreen"/>
+                  <path class="close1" d="M2,14 L22,4" stroke="darkgreen"/>
+                  <path class="close2" d="M2,14 L22,24" stroke="darkgreen"/>
+                  <path class="midLine before" d="M11,30 L29,6" stroke="green"/>
+                  <path class="midLine after" d="M48,2 L68,2" stroke="green"/>
+                  <path class="sideLine1 after" d="M8,2 L8,22" stroke="green"/>
+                  <path class="sideLine2 after" d="M108,2 L108,22" stroke="green"/>
+                  <path class="botLine before" d="M14,18 L2,34 L22,34" stroke="darkgreen"/>
+                  <path class="botLine1 after" d="M8,22 L8,2 L28,2" stroke="darkgreen"/>
+                  <path class="botLine2 after" d="M88,2 L108,2 L108,22" stroke="darkgreen"/>
                 </svg>
             </div>
             <div class="navbarContainer">
