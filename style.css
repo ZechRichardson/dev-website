@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+  --testNum: 200;
+}
+
 html {
     background-color: #072d17;
     color: lightgray;
@@ -140,9 +144,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-basis: 90vh;
-    border-color: lightgray;
-    border-width: 4px;
-    /* border-style: solid; */
 }
 
 .container > *:not(:first-child):not(:last-child):nth-child(even) {
@@ -151,7 +152,7 @@ html {
 
 .headerLogo {
     position: absolute;
-    left: 10px;
+    left: 6vh;
     overflow: visible;
 }
 
@@ -166,7 +167,7 @@ html {
 .footer {
     background-color: #141312;
     display: flex;
-    padding: 2vh;
+    padding: 8vh;
 }
 
 .navbar {
