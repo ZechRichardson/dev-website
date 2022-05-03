@@ -181,6 +181,7 @@ html {
     text-decoration: none;
     list-style: none;
     gap: 10px;
+	padding-left: 50px;
 }
 
 .navbar a:link,
