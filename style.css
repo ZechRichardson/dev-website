@@ -1,10 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Overpass Mono', 'IBM Plex Mono', monospace;
 }
 
 :root {
-  --testNum: 200;
+  --2hms: 200ms;
+  --4hms: 400ms;
+  --5hms: 500ms;
+  --6hms: 600ms;
 }
 
 html {
@@ -22,24 +26,24 @@ html {
   
   .zLogoPath .before {
     transition:
-      d 400ms;
+      d var(--4hms);
   }
   
   .zLogoPath:hover .before {
     transition:
-      d 400ms 200ms;
+      d var(--4hms) var(--2hms);
   }
   
   .zLogoPath:hover .after {
     transition:
-      opacity 400ms,
-      d 400ms;
+      opacity var(--4hms),
+      d var(--4hms);
   }
   
   .zLogoPath.clicked .after {
     transition:
-      opacity  400ms 500ms,
-      d 400ms 600ms;
+      opacity  var(--4hms) var(--5hms),
+      d var(--4hms) var(--6hms);
   }
   
   .after,
@@ -57,8 +61,8 @@ html {
   
   .zLogoPath [class^="close"] {
     transition:
-      opacity  400ms 200ms,
-      d 400ms 200ms;
+      opacity  var(--4hms) var(--2hms),
+      d var(--4hms) var(--2hms);
   }
   
   .zLogoPath:hover .midLine.before {
@@ -70,7 +74,6 @@ html {
   }
   
   .zLogoPath.clicked .topLine.before {
-  /*   opacity: 0; */
     d: path("M88,2 L108,2 L108,22");
   }
   
@@ -121,16 +124,16 @@ html {
   
   .zLogoPath .bg.after {
     transition:
-      opacity 400ms,
-      d 400ms;
+      opacity var(--4hms),
+      d var(--4hms);
   }
   
   .zLogoPath.clicked .bg.after {
     opacity: 1;
     d: path("M8,2 L108,2 L108,102 L8,102z");
     transition:
-      opacity  400ms 500ms,
-      d 400ms 600ms;
+      opacity  var(--4hms) var(--5hms),
+      d var(--4hms) var(--6hms);
   }
 
 .container {
