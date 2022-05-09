@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Overpass Mono', 'IBM Plex Mono', monospace;
-    text-align: center;
 }
 
 :root {
@@ -138,97 +137,99 @@ html {
   }
 
 .container {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .container > *:not(:first-child):not(:last-child) {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 90vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 90vh;
 }
 
 .container > *:not(:first-child):not(:last-child):nth-child(even) {
-    background-color: #375a47;
+  background-color: #375a47;
 }
 
 .headerLogo {
-    position: absolute;
-    left: 4vw;
-    overflow: visible;
+  position: absolute;
+  left: 4vw;
+  overflow: visible;
 }
 
 .header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: visible;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: visible;
 }
 
 .header,
 .footer {
-    background-color: #141312;
-    display: flex;
-    padding: 4vh;
+  background-color: #141312;
+  display: flex;
+  padding: 4vh;
 }
 
 .footer {
-    justify-content: center;
-    max-height: 4vw;
+  justify-content: center;
+  max-height: 4vw;
 }
 
 .navbar {
-    display: flex;
-    flex-flow: row wrap;
-    text-decoration: none;
-    list-style: none;
-    gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  text-decoration: none;
+  list-style: none;
+  gap: 10px;
 	padding-left: 50px;
 }
 
-.navbar a:link,
-.navbar a:visited
+/* .navbar  */
+a:link,
+/* .navbar  */
+a:visited
  {
-    color: inherit;
-    text-decoration: none;
-    list-style: none;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
 }
 
-.navbar a:hover {
-    color: #375a47;
+/* .navbar  */
+a:hover {
+  color: #375a47;
 }
 
-.navbar a:active {
-    color: #072d17;
-}
-
-.footer a {
-    margin-left: 4px;
+/* .navbar  */
+a:active {
+  color: #141312;
 }
 
 .footer img {
-    height: 16px;
-    width: auto;
+  background-color: #375a47;
+  border-radius: 100%;
+  height: 18px;
+  width: auto;
 }
 
 .toTop {
-    position: fixed;
-	width: 50px;
-	height: 50px;
-	bottom: 2vw;
-	right: 2vw;
-	background-color:#141312;
-    color: inherit;
-	font-size: 32px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 2vw;
+  right: 2vw;
+  background-color:#141312;
+  color: inherit;
+  font-size: 32px;
 	font-weight: 1000;
-	text-align: center;
+  text-align: center;
 	box-shadow: 1px 1px 2px gray;
 	border-radius: 40px;
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
