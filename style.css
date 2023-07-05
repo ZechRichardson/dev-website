@@ -139,6 +139,7 @@ html {
 .container {
   display: flex;
   flex-flow: column nowrap;
+  text-align: center;
 }
 
 .container > *:not(:first-child):not(:last-child) {

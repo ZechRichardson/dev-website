@@ -1,15 +1,15 @@
 console.log("Hello World!");
+console.log("If you want like to play Rock, Paper, Scissors, \nyou can begin a game by typing rps(#), \nwith # being the number of rounds you would like to play.");
 
 const choices = ['rock', 'paper', 'scissors'];
-const youLose = "You lose! "
-const youWin = "You Win! "
+const youLose = "You lost this round! "
+const youWin = "You won this round! "
 const tie = "It's a tie! "
 const paperWin = "Paper beats Rock!"
 const rockWin = "Rock beats Scissors!"
 const scissorsWin = "Scissors beat Paper!"
 let playerScore = 0;
 let computerScore = 0;
-
 
 function computerPlay() {
     const choice = choices[Math.floor(Math.random()*choices.length)];
@@ -21,59 +21,50 @@ function playRound(playerSelection,computerSelection) {
         case 'rock':
                 switch(computerSelection) {
                     case 'rock':
-                        console.log(tie + "\n" + playerScore + " vs " + computerScore);
+                        console.log(tie + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
-        
                     case 'paper':
                         computerScore++;
-                        console.log(youLose.concat(paperWin) + "\n" + playerScore + " vs " + computerScore);
+                        console.log(youLose.concat(paperWin) + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
-
                     case 'scissors':
                         playerScore++;
-                        console.log(youWin.concat(rockWin) + "\n" + playerScore + " vs " + computerScore);
+                        console.log(youWin.concat(rockWin) + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
                 }
             break;
-        
         case 'paper':
                 switch(computerSelection) {
                     case 'rock':
                         playerScore++;
-                        console.log(youWin.concat(paperWin) + "\n" + playerScore + " vs " + computerScore);
+                        console.log(youWin.concat(paperWin) + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
-        
                     case 'paper':
-                        console.log(tie + "\n" + playerScore + " vs " + computerScore);
+                        console.log(tie + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
-
                     case 'scissors':
                         computerScore++;
-                        console.log(youLose.concat(scissorsWin) + "\n" + playerScore + " vs " + computerScore);
+                        console.log(youLose.concat(scissorsWin) + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
                 }
             break;
-
         case 'scissors':
                 switch(computerSelection) {
                     case 'rock':
                         computerScore++;
-                        console.log(youLose.concat(rockWin) + "\n" + playerScore + " vs " + computerScore);
+                        console.log(youLose.concat(rockWin) + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
-        
                     case 'paper':
                         playerScore++;
-                        console.log(youWin.concat(scissorsWin) + "\n" + playerScore + " vs " + computerScore);
+                        console.log(youWin.concat(scissorsWin) + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
-
                     case 'scissors':
-                        console.log(tie + "\n" + playerScore + " vs " + computerScore);
+                        console.log(tie + "\n" + "Score: " + playerScore + " to " + computerScore);
                         break;
                 }
             break;
-
         default:
-            return "Please enter a valid choice."
+            return "You did not enter a valid choice."
     }
 }
 
@@ -85,21 +76,19 @@ function rps(rounds) {
         console.log("Round " + (1+i))
 
         let playerSelection = prompt("Make a choice between Rock, Paper, and Scissors", "Rock");
+        playerSelection = playerSelection.toLowerCase();
         const computerSelection = computerPlay();
 
-        if (playerSelection != null) {
-            playerSelection = playerSelection.toLowerCase();
+        if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
             console.log(playRound(playerSelection, computerSelection));
         } else {
             playerSelection = prompt("Please enter a valid choice.");
-            if (playerSelection == null) {
+            if (playerSelection == "") {
                 return "You have decided not to play."
             } else {
-                playerSelection = playerSelection.toLowerCase();
                 console.log(playRound(playerSelection, computerSelection));
             }
         }
-
     }
     
     if (playerScore > computerScore) {
@@ -115,6 +104,3 @@ function rps(rounds) {
     console.log("Computer: " + computerScore);
 
 }
-
-// game(1);
-
